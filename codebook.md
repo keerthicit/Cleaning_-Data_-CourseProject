@@ -4,8 +4,8 @@ author: "Keerthi Murugesan"
 date: "18 April 2018"
 output: html_document
 ---
-##Codebook for my CourseProject of Getting & Cleaning Data course
 
+Codebook for my CourseProject of Getting & Cleaning Data course
 
 This code book is for run_analysis.R script to do the following actions
 
@@ -16,10 +16,10 @@ This code book is for run_analysis.R script to do the following actions
 5. Appropriately labels the data set with descriptive variable names.
 6. From the data set in above step, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 7. Store the new independent data set to txt file
+________________________________________________________________________________________________________
 
-###____________________________________________________________________________________________________
+Variables:
 
-####Variables:
 dataURL         - Type: String  Value: Data set URL to download data from
 path            - Type: String  Value: Local path where the files are stored
 x_combined      - Type: tibble  Value: combined values of X_train.txt and X_test.txt
@@ -28,11 +28,11 @@ sub_combined    - Type: tibble  Value: combined values of  subject_train.txt and
 act_lbl         - Type: tibble  Value: values of activity_labels.txt
 features        - Type: tibble  Value: values of features.txt
 final_data      - Type: tibble  Value: Final tidy independent dataset  
+________________________________________________________________________________________________________
 
-###____________________________________________________________________________________________________
-####Functions:
+Functions:
 
-#####run_analysis():
+run_analysis():
 
 Purpose: Function that performs all the activites and produces the output file with Tidy data
 
@@ -69,9 +69,9 @@ Steps:
 13. Group 'x_combined' data with columns 'activity_type' and 'subject' using group_by() and find average for other columns by applying summarise_all(mean) to the result from group_by() and store it in 'final_data'. resulting tibble: 180 x 81
 
 14. write 'final_data' into tidy_data.txt using write.table()
-
 ________________________________________________________________________________________________________
-#####readfile():
+
+readfile():
 
 Purpose: To read a file using fread() fucntion and return as tibble 
 
@@ -85,8 +85,9 @@ Input:
 
 
 Output: a tibble with file content if file is present, else NULL
+____________________________________________________________________________________________________
 
-###____________________________________________________________________________________________________
-####Libraries:
-data.tables
-dplyr
+Libraries:
+
+1. data.tables
+2. dplyr
