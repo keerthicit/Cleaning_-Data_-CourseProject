@@ -20,14 +20,14 @@ ________________________________________________________________________________
 
 Variables:
 
-dataURL         - Type: String  Value: Data set URL to download data from
-path            - Type: String  Value: Local path where the files are stored
-x_combined      - Type: tibble  Value: combined values of X_train.txt and X_test.txt
-y_combined      - Type: tibble  Value: combined values of y_train.txt and y_test.txt
-sub_combined    - Type: tibble  Value: combined values of  subject_train.txt and subject_test.txt
-act_lbl         - Type: tibble  Value: values of activity_labels.txt
-features        - Type: tibble  Value: values of features.txt
-final_data      - Type: tibble  Value: Final tidy independent dataset  
+1. dataURL         - Type: String  Value: Data set URL to download data from
+2. path            - Type: String  Value: Local path where the files are stored
+3. x_combined      - Type: tibble  Value: combined values of X_train.txt and X_test.txt
+4. y_combined      - Type: tibble  Value: combined values of y_train.txt and y_test.txt
+5. sub_combined    - Type: tibble  Value: combined values of  subject_train.txt and subject_test.txt
+6. act_lbl         - Type: tibble  Value: values of activity_labels.txt
+7. features        - Type: tibble  Value: values of features.txt
+8. final_data      - Type: tibble  Value: Final tidy independent dataset  
 ________________________________________________________________________________________________________
 
 Functions:

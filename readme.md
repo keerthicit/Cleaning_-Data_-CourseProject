@@ -18,9 +18,9 @@ ________________________________________________________________________________
 
 How to run:
 
-Clone the repo
-Source the run_analysis.R to RStudio
-call run_analysis()
+1. Clone the repo
+2. Source the run_analysis.R to RStudio
+3. call run_analysis()
 ________________________________________________________________________________________________________
 
 Output: Please refer to codebook.md for details
